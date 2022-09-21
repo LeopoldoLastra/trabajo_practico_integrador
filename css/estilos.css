@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Seccion Cabecera*/
+
+header{
+    background-color: #353a40;
+    position: sticky;
+    top: 0;
+    
+
+}
+
+.fondoCabecera{
+    background:radial-gradient(ellipse farthest-corner at right center, rgba(125,121,121,0.62) 10%, rgba(10,10,10,0.53) 80%), url(ba1.jpg) ;
+    background-size: cover;
+
+
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.logoTexto{
+    display: flex;
+}
+
+.logo{
+    width: 20%;
+}
+
+.nombreLogo{
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    
+}
+
+.link, .linkVerde {
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 5px 5px 5px 5px;
+}
+
+.linkVerde{
+    color: #297b3d;
+}
+
+.introduccion{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    color:#ffffff;
+    text-align: right;  
+}
+
+.introduccionContenido{
+    width: 40%;
+    margin: 10vw;
+}
+
+.botones{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    
+}
+
+.botonConRelleno, .botonSinRelleno{
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box;
+    border: #ffffff solid 1px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    
+}
+
+.botonConRelleno{
+    background-color:  #29a845;
+    border: none;
+}
+
+/*Seccion tarjetas*/
+.titulos{
+    text-align: center;
+    margin: 5px 0px;
+    text-transform: uppercase;
+}
+
+
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 200px 50px 200px;
+}
+
+.tarjetasIndividuales{
+    width: 300px;
+    justify-content: center;
+}
+
+.oradores{
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.tarjetas p{
+    display: inline;
+}
+
+.temaReact, .temaJava, .temaNegocios, .temaStartups{
+    box-sizing: border-box;
+    padding: 1%;
+    border-radius: 10%;
+    color:#ffffff
+   
+}
+
+.temaReact{
+    background-color: #3da5b9;   
+}
+
+.temaJava{
+    background-color: #dfaa0a;
+    color:#000;
+}
+
+.temaNegocios{
+    background-color: #72757a;
+  
+}
+
+.temaStartups{
+    background-color: #dd4e5a;
+}
+
+/*Seccion Lugar*/
+
+.lugar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:  #343a40;
+    
+}
+.lugar img{
+    width: 50vw;
+}
+
+.lugarTexto{
+    color:#ffffff;
+    margin:15px 0px 0px 15px;
+}
+
+.lugarTitulo{
+    font-size: 2em;
+}
+
+.botonConocerMas{
+    display:inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box;
+    border: #ffffff solid 1px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 5px;}
+
+    /*Formulario*/
+
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+
+.input{
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 1px 0px;
+    width: 250px;
+}
+
+.inputCuerpo{
+    box-sizing: border-box;
+    margin: 1px 0px ;
+    padding: 5px;
+    width: 500px;
+}
+
+.inputEnviar{
+    box-sizing: border-box;
+    margin: 1px 0px ;
+    padding: 5px;
+    width: 500px;
+    color:#ffffff;
+    background-color: #52c36b;
+    border:none;
+    border-radius: 5px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #353a40;
+    height: 10vh;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+
