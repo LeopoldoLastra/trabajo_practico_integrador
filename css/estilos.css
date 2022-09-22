@@ -1,23 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@100;300;400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+body{
+    width:100vw;
+}
+
+
+
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+h3{
+    margin-top: 5px;
 }
 
 /*Seccion Cabecera*/
 
 header{
     background-color: #353a40;
-    position: sticky;
     top: 0;
-    
-
-}
-
-.fondoCabecera{
-    background:radial-gradient(ellipse farthest-corner at right center, rgba(125,121,121,0.62) 10%, rgba(10,10,10,0.53) 80%), url(ba1.jpg) ;
-    background-size: cover;
-
-
 }
 
 .cabecera{
@@ -39,6 +53,7 @@ header{
     display: flex;
     color: #ffffff;
     align-items: center;
+    font-size: 1.5rem;
     
 }
 
@@ -51,6 +66,13 @@ header{
 
 .linkVerde{
     color: #297b3d;
+}
+
+/*Introducción */
+.fondoCabecera{
+    background:radial-gradient(ellipse farthest-corner at right center, rgba(125,121,121,0.62) 10%, rgba(10,10,10,0.53) 80%), url(ba1.jpg) ;
+    background-size:cover;
+    
 }
 
 .introduccion{
@@ -98,12 +120,19 @@ header{
     text-transform: uppercase;
 }
 
+.titulosParrafo{
+    font-size: 0.7rem;
+    margin: 10px 0px 5px 0px;
+}
 
 .tarjetas{
     display: flex;
     justify-content: space-around;
     margin: 20px 200px 50px 200px;
+    overflow-x: visible;
 }
+
+
 
 .tarjetasIndividuales{
     width: 300px;
@@ -152,10 +181,11 @@ header{
     justify-content: center;
     align-items: flex-start;
     background-color:  #343a40;
-    
 }
+
 .lugar img{
     width: 50vw;
+    overflow-x: visible;
 }
 
 .lugarTexto{
@@ -179,14 +209,17 @@ header{
 
     /*Formulario*/
 
-
-
 .formulario{
     display: flex;
     flex-direction: column;
     align-items: center;  
 }
 
+.formularioTexto{
+    width: 470px;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
 
 .input{
     box-sizing: border-box;
@@ -217,13 +250,154 @@ header{
 
 footer{
     background-color: #353a40;
-    height: 10vh;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    
+    margin-top: 20px;
+    
+    
 }
 
+.navegacionFooter{
+    display: grid;
+    grid-template-columns: repeat(7,7fr);
+    padding: 20px 0px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+.linkFooter {
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
 
+@media screen and (max-width:900px) {
+    
+    
+    .tarjetas{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .lugar{
+        flex-direction: column;
+        
+    }
+    .lugar img{
+        width: 100vw;
+    }
 
+    .introduccionContenido{
+        width: 100%;
+        margin: 10vw;
+    }
 
+    .introduccion{
+        justify-content: center;
+
+    }
+    .botones{
+        justify-content: center;
+
+    }
+
+    .botonConocerMas{
+        margin-bottom: 10px;
+    }
+
+    .formularioTexto{
+        margin: 4px 5px 8px 5px;
+        width: 80vw;
+        text-align: center;
+    }
+    
+    .input{
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        width: 80vw;
+        align-items: center ;
+    }
+    
+    .inputCuerpo{
+        margin: 4px 5px 8px 5px;
+        width: 80vw;
+    }
+    
+    .inputEnviar{
+        margin: 4px 5px 8px 5px;
+        width: 80vw;
+        
+    }
+
+}
+
+@media screen and (max-width:1300px) {   
+    .tarjetas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacionFooter{
+        
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: repeat(4,50px);
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .cabecera{
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        height: 25vh;
+    }
+
+    .logoTexto{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .logo{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        width: 10%;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:715px) {
+    .cabecera{
+        display: grid;
+        grid-template-rows: 30% 70%;
+        height: 30vh;
+        text-align: center;
+        
+    }
+    
+    nav{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 34% ;
+       
+    }
+
+    .linkVerde{
+        box-sizing: border-box;
+        color:#ffffff;
+        background-color: #52c36b;      
+        border:none;
+        grid-column:1/3;
+
+    }
+
+}   
