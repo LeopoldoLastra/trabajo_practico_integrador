@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC</title>
+    <link rel="shortcut icon" href="../assets/imagenes/favicon.ico">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    
+        <header>
+            <div class="cabecera">
+                <div class="logoTexto">
+                <img class="logo" src="../assets/imagenes/codoacodo.png" alt="Logo de Codo a Codo" >
+                <p class="nombreLogo">Conf Bs As</p>
+            </div>
+            <div>
+                <nav class="navegacion">
+                        <a class="link" href="../index.html">La conferencia</a>
+                        <a class="link" href="../index.html#oradores">Los oradores</a>
+                        <a class="link" href="../index.html#lugar">El lugar y la fecha</a>
+                        <a class="link" href="../index.html#convierteteEnOrador">Conviertete en orador</a>
+                        <a class="linkVerde" href="#">Comprar Tickets</a>
+                        
+                </nav>        
+                <div>
+        </header>
+        
+    
+    
+    <main>
+        <section>
+            <div class="tarifario">
+                <div class="tarifarioIndividual" id="estudiantes">
+                    <p class="categoria">Estudiante</p><br>
+                    <p>Tiene un descuento</p><br>
+                    <p class="descuento">80%</p><br>
+                    <p class="aclaracion">*Presentar documentación</p>        
+                </div>
+                <div class="tarifarioIndividual" id="trainee">
+                    <p class="categoria">Trainee</p><br>
+                    <p>Tiene un descuento</p><br>
+                    <p class="descuento"></p>50%</p><br>
+                    <p class="aclaracion">*Presentar documentación</p>        
+                </div>
+                <div class="tarifarioIndividual" id="junior">
+                    <p class="categoria">Junior</p><br>
+                    <p>Tiene un descuento</p><br>
+                    <p class="descuento">15%</p><br>
+                    <p class="aclaracion">*Presentar documentación</p>        
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    
+    <section>
+        <div class="titulos">
+            <p class="titulosParrafo">Venta</p>
+            <h2>Valor del Ticket $200</h2>
+        </div>
+                   
+         <form class="formulario">
+            
+            <div>
+                <input class="input inputTicket" type="text" placeholder="Nombre" id="nombre">
+                <input class="input inputTicket" type="text" placeholder="Apellido" id="apellido"><br class="salto">
+            </div>
+            <div >
+                <input class="mail" type="email" placeholder="Correo" id="mail"><br>
+            </div>
+            <div>
+
+            <div class="formularioCompra">
+                <div class="informacionCompra">
+                    <label class="labelTickets">Cantidad</label>
+                    <input class="input" type="number" placeholder="Cantidad" id="cantidadTickets">
+                </div>
+                <div class="informacionCompra">
+                    <label class="labelTickets">Categoria</label>
+                    <select name="tarifaCompleta" id="categorias">
+                        <option value="tarifaCompleta">Tarifa Estandar</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
+                    </select>
+                </div>
+            </div>
+                
+            </div>
+
+            <div class="monto">
+                <p>Total a pagar: $</p>
+                <p id="valorTotal"></p>
+            </div>
+
+            <div>
+                <button type="button" class="boton" id="resumen">Reumen</button>
+                <button type="button" class="boton" id="borrar">Borrar</button>
+            </div>
+
+            
+
+        </form>
+
+    </section>
+
+    <footer>
+        <div class="navegacionFooter">
+            <a class="linkFooter" href="">Preguntas Frecuentes</a>
+            <a class="linkFooter" href="">Prensa</a>
+            <a class="linkFooter" href="">Conferencias</a>
+            <a class="linkFooter" href="">Contáctanos</a>
+            <a class="linkFooter" href="">Terminos y condiciones</a>
+            <a class="linkFooter" href="">Privacidad</a>
+            <a class="linkFooter" href="">Estudiantes</a>
+        </div> 
+    </footer>
+
+    <script src="../tarifas.js"></script>
+</body>
+
+
+</html>

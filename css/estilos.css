@@ -7,6 +7,14 @@
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
+
+.is_invalid{
+    box-shadow: inset 0 0 0.25em 0.1em #f9030380;
+}
+
+
+
+
 body{
     width:100vw;
 }
@@ -276,14 +284,137 @@ footer{
     
 }
 
+
+/*Comprar Tickets*/
+
+.tarifario{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    margin: 20px 200px 0px 200px;
+    overflow-x: visible;
+}
+
+.tarifarioIndividual{
+    width: 200px;
+    text-align: center;
+    padding: 15px 2px;
+}
+
+.categoria{
+    font-size: 1rem;
+   
+}
+
+.descuento{
+    font-weight: bold;
+}
+
+#estudiantes{
+    border: 2px groove #6aabf0;
+    font-size: 0.8rem;    
+}
+
+#trainee{
+    border: 2px groove #23a6ba;
+    font-size: 0.8rem;    
+}
+
+#junior{
+    border: 2px groove #fdc314;
+    font-size: 0.8rem;    
+}
+
+.aclaracion{
+    font-size: 0.7rem;
+
+}
+
+.mail{
+    box-sizing: border-box;
+    margin: 10px ;
+    padding: 5px;
+    width: 505px;
+}
+
+.formularioCompra{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.informacionCompra{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    
+
+}
+
+#categorias{
+    margin: 1px 0px;
+    padding: 5px;
+    color: #72757a;
+    
+}
+
+
+.monto{
+    display: flex;
+    flex-direction: row;
+    background-color: #cce5ff;
+    margin: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    width: 500px;
+    font-size: 0.9rem;
+    
+
+}
+.boton{
+    box-sizing: border-box;
+    margin: 10px 0px ;
+    padding: 7px;
+    width: 250px;
+    color:#ffffff;
+    background-color: #97c93e;
+    border:none;
+    border-radius: 5px;
+}
+
+
+/*Responsive*/
+@media screen and (max-width:740px) {
+
+    .tarifario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
 @media screen and (max-width:900px) {
+   
     
+    .labelTickets{
+        display:none;
+    }
+
+    .formularioCompra{
+        display: flex;
+        flex-direction: column;
+        width: 500px;;
+    }
     
-    .tarjetas{
+    .tarjetas {
         flex-direction: column;
         align-items: center;
     }
     
+  
+
     .lugar{
         flex-direction: column;
         
@@ -333,6 +464,18 @@ footer{
         margin: 4px 5px 8px 5px;
         width: 80vw;
         
+    }
+
+    .inputTicket{
+        width: 500px;
+    }
+    
+    .salto{
+        display: none;
+    }
+
+    .mail{
+        width: 500px;
     }
 
 }
@@ -401,3 +544,50 @@ footer{
     }
 
 }   
+
+@media screen and (max-width:715px) {
+
+.mail{
+  
+    width: 90vw;
+    margin: 5px;
+}
+
+.formularioCompra{
+   
+    width: 90vw;
+  
+}
+
+.inputTicket{
+    width: 90vw;
+}
+
+#cantidadTickets{
+    width: 90vw;
+    margin: 5px 0px 5px 0px;
+}
+
+
+
+
+
+.monto{
+  
+    
+    padding: 10px 5px 10px 5px;
+ 
+    width: 89vw;
+    
+    
+
+}
+.boton{
+  
+    width: 90vw;
+    display: flex;
+justify-content: center;
+   
+}
+
+}
