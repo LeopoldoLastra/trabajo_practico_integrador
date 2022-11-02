@@ -95,6 +95,7 @@ function calcular_monto(){
 
 
 function reset(){
+    location.reload()
     
 }
 

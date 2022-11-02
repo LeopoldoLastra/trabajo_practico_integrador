@@ -8,6 +8,8 @@
     overflow-x: hidden;
 }
 
+
+
 .is_invalid{
     box-shadow: inset 0 0 0.25em 0.1em #f9030380;
 }
@@ -260,7 +262,10 @@ footer{
     background-color: #353a40;
     
     margin-top: 20px;
-    
+ 
+    left: 0;
+    bottom: 0;
+    width: 100%;
     
 }
 
