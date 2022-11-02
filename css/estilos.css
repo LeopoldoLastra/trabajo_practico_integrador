@@ -553,15 +553,12 @@ footer{
 @media screen and (max-width:715px) {
 
 .mail{
-  
     width: 90vw;
     margin: 5px;
 }
 
 .formularioCompra{
-   
     width: 90vw;
-  
 }
 
 .inputTicket{
@@ -573,26 +570,16 @@ footer{
     margin: 5px 0px 5px 0px;
 }
 
-
-
-
-
 .monto{
-  
-    
     padding: 10px 5px 10px 5px;
- 
     width: 89vw;
-    
-    
 
 }
 .boton{
   
     width: 90vw;
     display: flex;
-justify-content: center;
+    justify-content: center;
    
 }
-
 }

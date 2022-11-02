@@ -33,14 +33,14 @@ function total_a_pagar (){
     if (apellido.value===""){
         apellido.classList.add("is_invalid");
         alert("Por favor, escribí tu apellido");
-        nombre.focus();
+        apellido.focus();
         return;
     }
     
     if (mail.value===""){
         mail.classList.add("is_invalid");
         alert("Por favor, escribí tu email");
-        nombre.focus();
+        mail.focus();
         return;
     }
 
@@ -51,14 +51,14 @@ function total_a_pagar (){
     if(!emailValid(mail.value)){
         mail.classList.add("is_invalid");
         alert("El email es inválido");
-        nombre.focus();
+        mail.focus();
         return;
     }
 
     if (cantidadTickets.value===""){
         cantidadTickets.classList.add("is_invalid");
         alert("Por favor, indicá la cantidad de tickets");
-        nombre.focus();
+        cantidadTickets.focus();
         return;
     }
 
